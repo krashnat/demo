@@ -13,6 +13,7 @@ public class RootFind {
 		int b=scan.nextInt();
 		System.out.println("Enter the value of c");
 		int c=scan.nextInt();
+		scan.close();
 		int delta=(b*b)-(a*a*c);
 	     if(delta>0)
 	     {

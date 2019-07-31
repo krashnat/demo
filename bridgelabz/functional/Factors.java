@@ -7,7 +7,7 @@ public class Factors {
 	public static void main(String[] args) {
 
 		Scanner s = new Scanner(System.in);
-		System.out.println("Enter the no of ehich factor is required");
+		System.out.println("Enter the no of which factor is required");
 		int n = s.nextInt();
 
 		while (n % 2 == 0) {

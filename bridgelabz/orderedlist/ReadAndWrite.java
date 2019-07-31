@@ -12,44 +12,44 @@ public class ReadAndWrite {
 	public static void main(String[] args) throws IOException {
 		
 	Scanner scan=new Scanner(System.in);	
-	LinkedList<Integer> ll=new LinkedList<Integer>();
+	LinkedList linkedlist=new LinkedList();
 	File f=new File("E:\\Programs\\BridgeLabz\\src\\com\\bridgelabz\\orderedlist\\inputinteger");
 	FileReader fr=new FileReader(f);
     BufferedReader br=new BufferedReader(fr);
      int num;
-     StringBuilder b=new StringBuilder();
+     StringBuilder builder=new StringBuilder();
     while(((num=br.read())!=-1))
     	{
-    	       b.append((char)num);
+    	       builder.append((char)num);
     	}
 
-    String s=b.toString();
+    String string=builder.toString();
     
-    String s1[]=s.split(",");
-    for(int i=0;i<s1.length;i++)
+    String stringarray[]=string.split(",");
+    for(int i=0;i<stringarray.length;i++)
     {
-    	 ll.insert(Integer.parseInt(s1[i]));
+    	 linkedlist.insert(Integer.parseInt(stringarray[i]));
     }
     
 
-    ll.sort();
-    ll.display();
+    linkedlist.sort();
+    linkedlist.display();
     System.out.println("Enter the element you want to search");
    int element=scan.nextInt();
-    int position=ll.findPosition(element);
+    int position=linkedlist.findPosition(element);
     System.out.println(position);
-    ll.display();
+    linkedlist.display();
     if(position==0)
     {
-    	ll.insert(element);
+    	linkedlist.insert(element);
     }
     else
     {
-    	ll.delete(position);
+    	linkedlist.delete(position);
     }
-   ll.display();
-   ll.arrange();
-   ll.add();
+   linkedlist.display();
+   linkedlist.arrange();
+   linkedlist.add();
    
     
 	}

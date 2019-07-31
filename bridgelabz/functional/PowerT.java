@@ -9,6 +9,7 @@ public class PowerT {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the num");
 		int num=s.nextInt();
+		s.close();
 		double power=1;
 		if(num>=0 && num<32)
 		{

@@ -21,7 +21,7 @@ public class CoupanJn {
 
 			int rn = genr(r);
 			if (!ar.contains(rn))
-				;
+				
 			{
 				ar.add(rn);
 				loop--;

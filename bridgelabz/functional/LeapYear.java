@@ -8,6 +8,7 @@ public class LeapYear {
 	{
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the year");
+		s.close();
 		int yy=s.nextInt();
 		if(yy%400==0)
 		{

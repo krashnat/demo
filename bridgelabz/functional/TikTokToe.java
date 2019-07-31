@@ -17,7 +17,7 @@ public class TikTokToe {
 				System.out.print(a[i][j] + " ");
 				c--;
 
-			}
+			} 
 			System.out.println();
 		}
 		while (count < 9) {

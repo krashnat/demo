@@ -39,11 +39,6 @@ public class Permutation {
 		scan.close();
 		int length=input.length()-1;
 		permutation(input,0,length);
-		
-		
-		
-		
-		
 
 	}
 

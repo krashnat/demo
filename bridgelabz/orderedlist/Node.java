@@ -1,8 +1,12 @@
 package com.bridgelabz.orderedlist;
 
-public class Node<Integer> {
+public class Node{
 	int data;
-	Node<Integer> next;
-
+	Node next;
+	public Node(int data)
+	{
+		this.data=data;
+		this.next=null;
+	}
 
 }

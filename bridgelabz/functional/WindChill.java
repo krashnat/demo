@@ -11,6 +11,7 @@ public class WindChill {
 		double v=0;
 		System.out.println("Enter the value of temperature");
         double temp=scan.nextInt();
+        scan.close();
         if(temp<50)
         {
         	 t=temp;	

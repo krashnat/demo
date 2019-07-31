@@ -5,14 +5,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class LinkedList<Integer> {
-	Node<Integer> head;
-     private int size;
-	void insert(int n)
+public class LinkedList {
+	Node head;
+     private int size;	
+     void insert(int n)
 	{
-		Node<Integer> node=new Node<Integer>();
-		node.data=n;
-		node.next=null;
+		Node node=new Node(n);
 		
 		if(head==null)
 		{
@@ -28,6 +26,7 @@ public class LinkedList<Integer> {
 				temp=temp.next;
 			}
 			temp.next=node;
+			
 		}
 		size++;
 		
@@ -64,50 +63,72 @@ public class LinkedList<Integer> {
 	void display()
 	{
 		Node node=head;
+		if(head==null) {
+			System.out.println("Underflow");
+		}
+		else
 		while(node!=null) 
 		{
 		System.out.println(node.data);
 		node=node.next;
 		}
-	}
+		}
 	
 	int findPosition(int data)
 	{
 		Node temp=head;
 		int position=0;
-		while(temp.next!=null)
+	if(temp.data!=0)
+	{
+		while(temp.data!=0)
 		{
 			position++;
 			if(temp.data==data)
 			{
+				
 				return position;
 			}
+			if(temp.next!=null)
+			{
 			temp=temp.next;
-			
+			}
+			else
+			{
+				return 0;
+			}
 		}
-		return 0 ;
-	
 	}
-	void delete(int position)
+	else
 	{
-		if(position==1)
+		if(temp.data==data)
 		{
-			head=head.next;
+			return position+1;
 		}
 		else
 		{
-		Node temp=head.next;
-		
-		for(int i=1;i<=position;i++)
+			return 0;
+		}
+	}
+		return 0 ;
+	
+	}
+	
+	public void delete(int position)
+	{
+		Node temp=head;
+		if(position == 1)
 		{
-			if(i==position-1)
+			head=temp.next;
+		}
+		else
+		{
+			while(position-2 > 0)
 			{
-				temp.next=temp.next.next;
+				temp=temp.next;
+				position--;
 			}
-			temp=temp.next;
+		temp.next=temp.next.next;
 		}
-		}
-		
 	}
 	void arrange()
 	{
