@@ -1,0 +1,35 @@
+[
+  
+  { 
+    "inventory":"rice",
+    "inventoryDetails":
+    [
+      {
+		"Name":"Basmati",
+		"amount":56,
+		"weight":12
+		},
+		{
+		"Name":"rfgh",
+		"amount":78,
+		"weight":12
+		}
+		]
+  },
+		{
+		  "inventory":"wheat",
+		  "inventoryDetails":
+		  [
+		{
+		"Name":"normal",
+		"amount":30,
+		"weight":60
+		},
+		{
+		"Name":"ss",
+		"amount":30,
+		"weight":60
+		}
+		]
+		}
+]
