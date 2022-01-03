@@ -9,6 +9,8 @@ public class Details {
 // Added by vinu
 // waiting for approved
 // changed username
+// Added by vi
+// 	conflicts
 	public String getName() {
 		return name;
 	}
