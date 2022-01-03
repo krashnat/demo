@@ -6,7 +6,7 @@ public class Details {
 	String fullname;
 	String contactNo;
 	String date;
-
+// Added by vinu
 	public String getName() {
 		return name;
 	}
