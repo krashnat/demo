@@ -7,6 +7,7 @@ public class Details {
 	String contactNo;
 	String date;
 // Added by vinu
+// waiting for approved
 	public String getName() {
 		return name;
 	}
