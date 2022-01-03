@@ -8,6 +8,7 @@ public class Details {
 	String date;
 // Added by vinu
 // waiting for approved
+// changed username
 	public String getName() {
 		return name;
 	}
