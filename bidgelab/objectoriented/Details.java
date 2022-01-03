@@ -7,6 +7,7 @@ public class Details {
 	String contactNo;
 	String date;
 // Added by vinu
+// 	conflicts
 	public String getName() {
 		return name;
 	}
