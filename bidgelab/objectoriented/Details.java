@@ -7,6 +7,7 @@ public class Details {
 	String contactNo;
 	String date;
 // Added by vinu
+// 	ghdvfgvdcfjgv
 	public String getName() {
 		return name;
 	}
