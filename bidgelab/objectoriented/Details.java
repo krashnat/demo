@@ -11,6 +11,8 @@ public class Details {
 // changed username
 // Added by vi
 // 	conflicts
+
+// on second branch
 	public String getName() {
 		return name;
 	}
